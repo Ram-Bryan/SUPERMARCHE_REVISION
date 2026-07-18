@@ -5,8 +5,6 @@ PRAGMA foreign_keys = ON;
 CREATE TABLE client (
     id_client  INTEGER PRIMARY KEY AUTOINCREMENT,
     nom        TEXT NOT NULL,
-    telephone  TEXT,
-    email      TEXT
 );
 
 CREATE TABLE caissier (

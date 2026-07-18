@@ -1,0 +1,36 @@
+ERROR - 2026-07-18 14:48:47 --> Error connecting to the database: mysqli_sql_exception: No connection could be made because the target machine actively refused it in E:\Dossier_Bryan\ITU\S4\SI\SUPERMARCHE_REVISION\system\Database\MySQLi\Connection.php:201
+Stack trace:
+#0 E:\Dossier_Bryan\ITU\S4\SI\SUPERMARCHE_REVISION\system\Database\MySQLi\Connection.php(201): mysqli->real_connect('localhost', '', Object(SensitiveParameterValue), '', 3306, '', 0)
+#1 E:\Dossier_Bryan\ITU\S4\SI\SUPERMARCHE_REVISION\system\Database\BaseConnection.php(555): CodeIgniter\Database\MySQLi\Connection->connect(false)
+#2 E:\Dossier_Bryan\ITU\S4\SI\SUPERMARCHE_REVISION\system\Database\BaseConnection.php(795): CodeIgniter\Database\BaseConnection->initialize()
+#3 E:\Dossier_Bryan\ITU\S4\SI\SUPERMARCHE_REVISION\system\Database\BaseConnection.php(1706): CodeIgniter\Database\BaseConnection->query('SHOW TABLES FRO...')
+#4 E:\Dossier_Bryan\ITU\S4\SI\SUPERMARCHE_REVISION\system\Database\BaseConnection.php(1726): CodeIgniter\Database\BaseConnection->listTables()
+#5 E:\Dossier_Bryan\ITU\S4\SI\SUPERMARCHE_REVISION\system\Database\MigrationRunner.php(821): CodeIgniter\Database\BaseConnection->tableExists('migrations')
+#6 E:\Dossier_Bryan\ITU\S4\SI\SUPERMARCHE_REVISION\system\Database\MigrationRunner.php(173): CodeIgniter\Database\MigrationRunner->ensureTable()
+#7 E:\Dossier_Bryan\ITU\S4\SI\SUPERMARCHE_REVISION\system\Commands\Database\Migrate.php(89): CodeIgniter\Database\MigrationRunner->latest(NULL)
+#8 E:\Dossier_Bryan\ITU\S4\SI\SUPERMARCHE_REVISION\system\CLI\SignalTrait.php(245): CodeIgniter\Commands\Database\Migrate::CodeIgniter\Commands\Database\{closure}()
+#9 E:\Dossier_Bryan\ITU\S4\SI\SUPERMARCHE_REVISION\system\Commands\Database\Migrate.php(88): CodeIgniter\Commands\Database\Migrate->withSignalsBlocked(Object(Closure))
+#10 E:\Dossier_Bryan\ITU\S4\SI\SUPERMARCHE_REVISION\system\CLI\Commands.php(74): CodeIgniter\Commands\Database\Migrate->run(Array)
+#11 E:\Dossier_Bryan\ITU\S4\SI\SUPERMARCHE_REVISION\system\CLI\Console.php(47): CodeIgniter\CLI\Commands->run('migrate', Array)
+#12 E:\Dossier_Bryan\ITU\S4\SI\SUPERMARCHE_REVISION\system\Boot.php(442): CodeIgniter\CLI\Console->run()
+#13 E:\Dossier_Bryan\ITU\S4\SI\SUPERMARCHE_REVISION\system\Boot.php(166): CodeIgniter\Boot::runCommand(Object(CodeIgniter\CLI\Console))
+#14 E:\Dossier_Bryan\ITU\S4\SI\SUPERMARCHE_REVISION\spark(87): CodeIgniter\Boot::bootSpark(Object(Config\Paths))
+#15 {main}
+
+Next CodeIgniter\Database\Exceptions\DatabaseException: No connection could be made because the target machine actively refused it in E:\Dossier_Bryan\ITU\S4\SI\SUPERMARCHE_REVISION\system\Database\MySQLi\Connection.php:231
+Stack trace:
+#0 E:\Dossier_Bryan\ITU\S4\SI\SUPERMARCHE_REVISION\system\Database\BaseConnection.php(555): CodeIgniter\Database\MySQLi\Connection->connect(false)
+#1 E:\Dossier_Bryan\ITU\S4\SI\SUPERMARCHE_REVISION\system\Database\BaseConnection.php(795): CodeIgniter\Database\BaseConnection->initialize()
+#2 E:\Dossier_Bryan\ITU\S4\SI\SUPERMARCHE_REVISION\system\Database\BaseConnection.php(1706): CodeIgniter\Database\BaseConnection->query('SHOW TABLES FRO...')
+#3 E:\Dossier_Bryan\ITU\S4\SI\SUPERMARCHE_REVISION\system\Database\BaseConnection.php(1726): CodeIgniter\Database\BaseConnection->listTables()
+#4 E:\Dossier_Bryan\ITU\S4\SI\SUPERMARCHE_REVISION\system\Database\MigrationRunner.php(821): CodeIgniter\Database\BaseConnection->tableExists('migrations')
+#5 E:\Dossier_Bryan\ITU\S4\SI\SUPERMARCHE_REVISION\system\Database\MigrationRunner.php(173): CodeIgniter\Database\MigrationRunner->ensureTable()
+#6 E:\Dossier_Bryan\ITU\S4\SI\SUPERMARCHE_REVISION\system\Commands\Database\Migrate.php(89): CodeIgniter\Database\MigrationRunner->latest(NULL)
+#7 E:\Dossier_Bryan\ITU\S4\SI\SUPERMARCHE_REVISION\system\CLI\SignalTrait.php(245): CodeIgniter\Commands\Database\Migrate::CodeIgniter\Commands\Database\{closure}()
+#8 E:\Dossier_Bryan\ITU\S4\SI\SUPERMARCHE_REVISION\system\Commands\Database\Migrate.php(88): CodeIgniter\Commands\Database\Migrate->withSignalsBlocked(Object(Closure))
+#9 E:\Dossier_Bryan\ITU\S4\SI\SUPERMARCHE_REVISION\system\CLI\Commands.php(74): CodeIgniter\Commands\Database\Migrate->run(Array)
+#10 E:\Dossier_Bryan\ITU\S4\SI\SUPERMARCHE_REVISION\system\CLI\Console.php(47): CodeIgniter\CLI\Commands->run('migrate', Array)
+#11 E:\Dossier_Bryan\ITU\S4\SI\SUPERMARCHE_REVISION\system\Boot.php(442): CodeIgniter\CLI\Console->run()
+#12 E:\Dossier_Bryan\ITU\S4\SI\SUPERMARCHE_REVISION\system\Boot.php(166): CodeIgniter\Boot::runCommand(Object(CodeIgniter\CLI\Console))
+#13 E:\Dossier_Bryan\ITU\S4\SI\SUPERMARCHE_REVISION\spark(87): CodeIgniter\Boot::bootSpark(Object(Config\Paths))
+#14 {main}
