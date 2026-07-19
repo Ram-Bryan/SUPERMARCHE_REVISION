@@ -76,3 +76,185 @@ in SYSTEMPATH\Database\SQLite3\Connection.php on line 163.
 10 SYSTEMPATH\Boot.php(442): CodeIgniter\CLI\Console->run()
 11 SYSTEMPATH\Boot.php(166): CodeIgniter\Boot::runCommand(Object(CodeIgniter\CLI\Console))
 12 ROOTPATH\spark(87): CodeIgniter\Boot::bootSpark(Object(Config\Paths))
+CRITICAL - 2026-07-18 17:18:07 --> CodeIgniter\Exceptions\BadMethodCallException: Call to undefined method App\Models\CaisseModel::getCaissierByEmailAndMdp
+[Method: POST, Route: login]
+in SYSTEMPATH\Model.php on line 761.
+ 1 APPPATH\Controllers\AuthController.php(22): CodeIgniter\Model->__call('getCaissierByEmailAndMdp', [...])
+ 2 SYSTEMPATH\CodeIgniter.php(951): App\Controllers\AuthController->login()
+ 3 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AuthController))
+ 4 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 SYSTEMPATH\Boot.php(417): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 7 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+ 8 SYSTEMPATH\rewrite.php(44): require_once('E:\\Dossier_Bryan\\ITU\\S4\\SI\\SUPERMARCHE_REVISION\\public\\index.php')
+DEBUG - 2026-07-18 17:18:38 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2026-07-18 17:18:46 --> CodeIgniter\Exceptions\BadMethodCallException: Call to undefined method App\Models\CaisseModel::getCaissierByEmailAndMdp
+[Method: POST, Route: login]
+in SYSTEMPATH\Model.php on line 761.
+ 1 APPPATH\Controllers\AuthController.php(22): CodeIgniter\Model->__call('getCaissierByEmailAndMdp', [...])
+ 2 SYSTEMPATH\CodeIgniter.php(951): App\Controllers\AuthController->login()
+ 3 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AuthController))
+ 4 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 SYSTEMPATH\Boot.php(417): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 7 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+ 8 SYSTEMPATH\rewrite.php(44): require_once('E:\\Dossier_Bryan\\ITU\\S4\\SI\\SUPERMARCHE_REVISION\\public\\index.php')
+DEBUG - 2026-07-18 17:19:53 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-07-18 17:20:01 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-07-18 17:36:38 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-07-18 17:36:45 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-07-18 17:36:45 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-07-18 17:37:05 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-07-18 17:37:05 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-07-18 17:38:02 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-07-18 17:38:02 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2026-07-18 17:42:05 --> ParseError: syntax error, unexpected end of file
+[Method: CLI, Route: make:controller/CaisseController]
+in APPPATH\Config\Routes.php on line 10.
+ 1 SYSTEMPATH\CLI\Console.php(41): CodeIgniter\Router\RouteCollection->loadRoutes()
+ 2 SYSTEMPATH\Boot.php(442): CodeIgniter\CLI\Console->run()
+ 3 SYSTEMPATH\Boot.php(166): CodeIgniter\Boot::runCommand(Object(CodeIgniter\CLI\Console))
+ 4 ROOTPATH\spark(87): CodeIgniter\Boot::bootSpark(Object(Config\Paths))
+CRITICAL - 2026-07-18 17:42:18 --> ParseError: syntax error, unexpected end of file
+[Method: CLI, Route: make:controller/CaisseController]
+in APPPATH\Config\Routes.php on line 10.
+ 1 SYSTEMPATH\CLI\Console.php(41): CodeIgniter\Router\RouteCollection->loadRoutes()
+ 2 SYSTEMPATH\Boot.php(442): CodeIgniter\CLI\Console->run()
+ 3 SYSTEMPATH\Boot.php(166): CodeIgniter\Boot::runCommand(Object(CodeIgniter\CLI\Console))
+ 4 ROOTPATH\spark(87): CodeIgniter\Boot::bootSpark(Object(Config\Paths))
+DEBUG - 2026-07-18 18:05:55 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-07-18 18:06:23 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-07-18 18:07:23 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-07-18 18:07:29 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-07-18 18:07:40 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2026-07-18 18:07:40 --> ErrorException: Undefined variable $data
+[Method: GET, Route: caisse/choix]
+in APPPATH\Views\caisse\choix.php on line 12.
+ 1 APPPATH\Views\caisse\choix.php(12): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $data', 'E:\\Dossier_Bryan\\ITU\\S4\\SI\\SUPERMARCHE_REVISION\\app\\Views\\caisse\\choix.php', 12)
+ 2 SYSTEMPATH\View\View.php(240): include('E:\\Dossier_Bryan\\ITU\\S4\\SI\\SUPERMARCHE_REVISION\\app\\Views\\caisse\\choix.php')
+ 3 SYSTEMPATH\View\View.php(243): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1250): CodeIgniter\View\View->render('caisse/choix', [], true)
+ 5 APPPATH\Controllers\CaisseController.php(22): view('caisse/choix', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(951): App\Controllers\CaisseController->choix()
+ 7 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\CaisseController))
+ 8 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH\Boot.php(417): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+12 SYSTEMPATH\rewrite.php(44): require_once('E:\\Dossier_Bryan\\ITU\\S4\\SI\\SUPERMARCHE_REVISION\\public\\index.php')
+DEBUG - 2026-07-18 18:08:15 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-07-18 18:08:21 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-07-18 18:08:33 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+ERROR - 2026-07-18 19:23:02 --> no such table: caisse
+in SYSTEMPATH\Database\SQLite3\Connection.php on line 163.
+ 1 SYSTEMPATH\Database\SQLite3\Connection.php(163): SQLite3->exec('INSERT INTO `caisse` (`libelle`, `numero`)
+VALUES (\'Caisse 1\',\'1\'), (\'Caisse 2\',\'2\')')
+ 2 SYSTEMPATH\Database\BaseConnection.php(910): CodeIgniter\Database\SQLite3\Connection->execute('INSERT INTO `caisse` (`libelle`, `numero`)
+VALUES (\'Caisse 1\',\'1\'), (\'Caisse 2\',\'2\')')
+ 3 SYSTEMPATH\Database\BaseConnection.php(827): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `caisse` (`libelle`, `numero`)
+VALUES (\'Caisse 1\',\'1\'), (\'Caisse 2\',\'2\')')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(1841): CodeIgniter\Database\BaseConnection->query('INSERT INTO `caisse` (`libelle`, `numero`)
+VALUES (\'Caisse 1\',\'1\'), (\'Caisse 2\',\'2\')', null, false)
+ 5 SYSTEMPATH\Database\BaseBuilder.php(2230): CodeIgniter\Database\BaseBuilder->batchExecute('_insertBatch', 100)
+ 6 APPPATH\Database\Migrations\2026-07-18-192237_SeedInitialData.php(12): CodeIgniter\Database\BaseBuilder->insertBatch([...])
+ 7 SYSTEMPATH\Database\MigrationRunner.php(1014): App\Database\Migrations\SeedInitialData->up()
+ 8 SYSTEMPATH\Database\MigrationRunner.php(202): CodeIgniter\Database\MigrationRunner->migrate('up', Object(stdClass))
+ 9 SYSTEMPATH\Commands\Database\Migrate.php(89): CodeIgniter\Database\MigrationRunner->latest(null)
+10 SYSTEMPATH\CLI\SignalTrait.php(245): CodeIgniter\Commands\Database\Migrate::CodeIgniter\Commands\Database\{closure}()
+11 SYSTEMPATH\Commands\Database\Migrate.php(88): CodeIgniter\Commands\Database\Migrate->withSignalsBlocked(Object(Closure))
+12 SYSTEMPATH\CLI\Commands.php(74): CodeIgniter\Commands\Database\Migrate->run([])
+13 SYSTEMPATH\CLI\Console.php(47): CodeIgniter\CLI\Commands->run('migrate', [])
+14 SYSTEMPATH\Boot.php(442): CodeIgniter\CLI\Console->run()
+15 SYSTEMPATH\Boot.php(166): CodeIgniter\Boot::runCommand(Object(CodeIgniter\CLI\Console))
+16 ROOTPATH\spark(87): CodeIgniter\Boot::bootSpark(Object(Config\Paths))
+ERROR - 2026-07-18 19:23:55 --> no such table: caisse
+in SYSTEMPATH\Database\SQLite3\Connection.php on line 163.
+ 1 SYSTEMPATH\Database\SQLite3\Connection.php(163): SQLite3->exec('INSERT INTO `caisse` (`libelle`, `numero`)
+VALUES (\'Caisse 1\',\'1\'), (\'Caisse 2\',\'2\')')
+ 2 SYSTEMPATH\Database\BaseConnection.php(910): CodeIgniter\Database\SQLite3\Connection->execute('INSERT INTO `caisse` (`libelle`, `numero`)
+VALUES (\'Caisse 1\',\'1\'), (\'Caisse 2\',\'2\')')
+ 3 SYSTEMPATH\Database\BaseConnection.php(827): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `caisse` (`libelle`, `numero`)
+VALUES (\'Caisse 1\',\'1\'), (\'Caisse 2\',\'2\')')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(1841): CodeIgniter\Database\BaseConnection->query('INSERT INTO `caisse` (`libelle`, `numero`)
+VALUES (\'Caisse 1\',\'1\'), (\'Caisse 2\',\'2\')', null, false)
+ 5 SYSTEMPATH\Database\BaseBuilder.php(2230): CodeIgniter\Database\BaseBuilder->batchExecute('_insertBatch', 100)
+ 6 APPPATH\Database\Migrations\2026-07-18-192237_SeedInitialData.php(12): CodeIgniter\Database\BaseBuilder->insertBatch([...])
+ 7 SYSTEMPATH\Database\MigrationRunner.php(1014): App\Database\Migrations\SeedInitialData->up()
+ 8 SYSTEMPATH\Database\MigrationRunner.php(202): CodeIgniter\Database\MigrationRunner->migrate('up', Object(stdClass))
+ 9 SYSTEMPATH\Commands\Database\Migrate.php(89): CodeIgniter\Database\MigrationRunner->latest(null)
+10 SYSTEMPATH\CLI\SignalTrait.php(245): CodeIgniter\Commands\Database\Migrate::CodeIgniter\Commands\Database\{closure}()
+11 SYSTEMPATH\Commands\Database\Migrate.php(88): CodeIgniter\Commands\Database\Migrate->withSignalsBlocked(Object(Closure))
+12 SYSTEMPATH\CLI\Commands.php(74): CodeIgniter\Commands\Database\Migrate->run([])
+13 SYSTEMPATH\CLI\Console.php(47): CodeIgniter\CLI\Commands->run('migrate', [])
+14 SYSTEMPATH\Boot.php(442): CodeIgniter\CLI\Console->run()
+15 SYSTEMPATH\Boot.php(166): CodeIgniter\Boot::runCommand(Object(CodeIgniter\CLI\Console))
+16 ROOTPATH\spark(87): CodeIgniter\Boot::bootSpark(Object(Config\Paths))
+DEBUG - 2026-07-18 19:25:47 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-07-18 19:25:59 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-07-18 19:46:37 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-07-18 19:46:57 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2026-07-18 19:46:57 --> ParseError: syntax error, unexpected token "}", expecting ";"
+[Method: GET, Route: caisse/choix]
+in APPPATH\Controllers\CaisseController.php on line 35.
+ 1 SYSTEMPATH\Autoloader\Autoloader.php(295): CodeIgniter\Autoloader\Autoloader->includeFile('E:\\Dossier_Bryan\\ITU\\S4\\SI\\SUPERMARCHE_REVISION\\app\\Controllers\\CaisseController.php')
+ 2 SYSTEMPATH\Autoloader\Autoloader.php(271): CodeIgniter\Autoloader\Autoloader->loadInNamespace('App\\Controllers\\CaisseController')
+ 3 [internal function]: CodeIgniter\Autoloader\Autoloader->loadClass('App\\Controllers\\CaisseController')
+ 4 SYSTEMPATH\Router\Router.php(792): class_exists('\\App\\Controllers\\CaisseController')
+ 5 SYSTEMPATH\Router\Router.php(230): CodeIgniter\Router\Router->processRouteAttributes()
+ 6 SYSTEMPATH\CodeIgniter.php(829): CodeIgniter\Router\Router->handle('caisse/choix')
+ 7 SYSTEMPATH\CodeIgniter.php(441): CodeIgniter\CodeIgniter->tryToRouteIt(Object(CodeIgniter\Router\RouteCollection))
+ 8 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH\Boot.php(417): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+12 SYSTEMPATH\rewrite.php(44): require_once('E:\\Dossier_Bryan\\ITU\\S4\\SI\\SUPERMARCHE_REVISION\\public\\index.php')
+DEBUG - 2026-07-18 19:47:35 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-07-18 19:47:48 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-07-18 19:47:48 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-07-18 19:48:36 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-07-18 19:48:46 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-07-18 19:48:46 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-07-18 19:48:48 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-07-18 19:48:48 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-07-18 19:50:34 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-07-18 19:51:11 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-07-18 19:51:23 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-07-18 19:51:24 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-07-18 19:51:25 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-07-18 19:51:31 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-07-18 20:09:45 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-07-18 20:09:54 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-07-18 20:09:55 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-07-18 20:09:55 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-07-18 20:09:55 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-07-18 20:10:00 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-07-18 20:10:03 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-07-18 20:10:04 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-07-18 20:10:04 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-07-18 20:10:04 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-07-18 20:10:22 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-07-18 20:10:26 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-07-18 20:10:27 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-07-18 20:10:27 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-07-18 20:10:34 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-07-18 20:10:34 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-07-18 20:10:35 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-07-18 20:10:43 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-07-18 20:10:44 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-07-18 20:10:44 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-07-18 20:11:03 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-07-18 20:11:04 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-07-18 20:11:04 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-07-18 20:11:18 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-07-18 20:11:18 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-07-18 20:11:18 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-07-18 20:12:00 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-07-18 20:12:07 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-07-18 20:12:07 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-07-18 20:12:07 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-07-18 20:12:15 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-07-18 20:12:16 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-07-18 20:12:16 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-07-18 20:12:55 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-07-18 20:13:03 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-07-18 20:13:03 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.

@@ -15,3 +15,10 @@ VALUES(CURRENT_TIMESTAMP);
 - auto_increment => true
 - null => false
 - $this->db->table('caisse')->insertBatch([])
+
+## CI
+- csrf
+- session()->get("caissier", $infoSurLeCaissier)
+- session()->setFlashdata('....')
+- base_url()
+- pagination    

@@ -58,7 +58,6 @@ INSERT INTO produit (designation, prix, quantite_stock) VALUES ('Lait', 1200, 30
 INSERT INTO produit (designation, prix, quantite_stock) VALUES ('Riz (1kg)', 2500, 40);
 INSERT INTO produit (designation, prix, quantite_stock) VALUES ('Savon', 800, 60);
 
-
 -- caissier123
 -- caissier@gmail.com
 INSERT INTO caissier (mot_de_passe, email) VALUES ('$2y$10$5ggM0DclsFQ9nv0xZhVmv.Yn.xBh7xA6NkQff0zbE/eWRgujvssfS', 'caissier@gmail.com');

@@ -19,4 +19,9 @@ class CaisseModel extends Model
     protected $useAutoIncrement = true;
 
     protected $useTimestamps = false;
+
+    public function getCaisseByLibelle($libelle){
+        return $this->where('libelle', $libelle)->first();
+    }
+
 }

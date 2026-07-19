@@ -4,30 +4,34 @@ namespace App\Database\Migrations;
 
 use CodeIgniter\Database\Migration;
 
-class CreateCaissierTable extends Migration
+class CreateCaisseTable extends Migration
 {
     public function up()
     {
         $this->forge->addField([
-            'id_caissier' => [
-                'type' => 'INTEGER',
+            'id_caisse' => [
+                'type'           => 'INT',
+                'constraint'     => 11,
+                'unsigned'       => true,
                 'auto_increment' => true,
             ],
-            'mot_de_passe' => [
-                'type' => 'TEXT',
+            'numero' => [
+                'type'       => 'VARCHAR',
+                'constraint' => '50',
+                'null'       => false,
             ],
-            'email' => [
-                'type' => 'TEXT',
-                'null' => true,
+            'libelle' => [
+                'type'       => 'VARCHAR',
+                'constraint' => '255',
+                'null'       => true,
             ],
         ]);
-
-        $this->forge->addKey('id_caissier', true);
-        $this->forge->createTable('caissier');
+        $this->forge->addKey('id_caisse', true);
+        $this->forge->createTable('caisse');
     }
 
     public function down()
     {
-        $this->forge->dropTable('caissier');
+        $this->forge->dropTable('caisse');
     }
 }
