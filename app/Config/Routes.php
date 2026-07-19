@@ -9,3 +9,4 @@ $routes->get('/', 'AuthController::index');
 $routes->post('login', 'AuthController::login');
 $routes->get('caisse/choix', 'CaisseController::choix');
 $routes->get('caisse/valider', 'CaisseController::valider');
+$routes->get('produit/pdf', 'ProduitPdf::generate');

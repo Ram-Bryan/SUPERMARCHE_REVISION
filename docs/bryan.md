@@ -22,5 +22,4 @@ VALUES(CURRENT_TIMESTAMP);
 - session()->setFlashdata('....')
 - base_url()
 - pagination    
-
-## Pdf
+- charts
