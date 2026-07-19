@@ -20,16 +20,7 @@ class CaissierModel extends Model
 
     protected $useTimestamps = false;
 
-    public function getCaissierByEmailAndMdp($email, $mdp){
-
-        $caissier = $this->where('email', $email)->first();
-        if ($caissier) {
-            if (password_verify($mdp, $caissier['mot_de_passe'])) {
-                return $caissier;
-            }
-        } else {
-            return null;
-        }
-
+    public function getCaissierByEmail($email){
+        return $this->where('email', $email)->first();
     }
 }

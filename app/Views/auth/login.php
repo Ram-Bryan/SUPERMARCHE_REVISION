@@ -16,7 +16,7 @@
         </div>
     <?php } ?>
 
-    <form id="login">
+    <form id="login" method="post" action="/login">
         <?= csrf_field() ?>
 
         <label for="email">Email:</label>
@@ -31,6 +31,7 @@
 
 </body>
 
+<!-- 
 <script>
     const loginForm = document.querySelector("#login");
 
@@ -50,6 +51,6 @@
         });
     })
 
-</script>
+</script> -->
 
 </html>

@@ -14,23 +14,31 @@ class AuthController extends BaseController
         return view("auth/login");
     }
 
-    public function login() {
+    public function login()
+    {
         $email = $this->request->getPost('email');
         $mdp = $this->request->getPost('mdp');
 
-        echo $email . " " . $mdp;
-
         $caissierModel = new CaissierModel();
-        $caissier = $caissierModel->getCaissierByEmailAndMdp($email, $mdp);
+        $caissier = $caissierModel->getCaissierByEmail($email);
+
         if ($caissier != null) {
-            session()->set("caissier", $caissier);
-            session()->setFlashdata('success', 'Credentials verified successfully');
+            
+            if (password_verify($mdp, $caissier['mot_de_passe'])) {
+
+                session()->set("caissier", $caissier);
+                session()->setFlashdata('success', 'Credentials verified successfully');
+                return redirect()->to("/caisse/choix");
+
+            } else {
+                session()->setFlashdata('error', 'Email ou Mot de passe incorrect');
+                return redirect()->to("/");
+            }
+
         } else {
             session()->setFlashdata('error', 'Email ou Mot de passe incorrect');
-            // return redirect()->to("/");
+            return redirect()->to("/");
         }
-        
-        // return redirect()->to("/caisse/choix");
 
     }
 }
