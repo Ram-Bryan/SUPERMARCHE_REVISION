@@ -16,6 +16,7 @@ class AuthController extends BaseController
 
     public function login()
     {
+
         $email = $this->request->getPost('email');
         $mdp = $this->request->getPost('mdp');
 
@@ -26,8 +27,14 @@ class AuthController extends BaseController
             
             if (password_verify($mdp, $caissier['mot_de_passe'])) {
 
-                session()->set("caissier", $caissier);
+                session()->set([
+                    'id_caissier'=>$caissier['id_caissier'],
+                    'email'=>$caissier['email'],
+                    'isLoggedIn'=>true,
+                ]);
+                
                 session()->setFlashdata('success', 'Credentials verified successfully');
+
                 return redirect()->to("/caisse/choix");
 
             } else {

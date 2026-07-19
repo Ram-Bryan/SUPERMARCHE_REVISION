@@ -8,8 +8,8 @@
 <body>
 
 <h1>Effectuer vos achats ici</h1>
-<p>Caissier = <?= session()->get('caissier')['email']; ?></p>
-<p>Caisse = <?= session()->get('caisse')['libelle']; ?></p>
+<p>Caissier = <?= session()->get('email'); ?></p>
+<p>Caisse = <?= session()->get('caisse_libelle'); ?></p>
     
 </body>
 </html>

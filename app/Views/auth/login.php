@@ -16,7 +16,7 @@
         </div>
     <?php } ?>
 
-    <form id="login" method="post" action="/login">
+    <form id="login" method="post" action="<?= base_url("login") ?>">
         <?= csrf_field() ?>
 
         <label for="email">Email:</label>

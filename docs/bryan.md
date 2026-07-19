@@ -12,7 +12,7 @@ VALUES(CURRENT_TIMESTAMP);
 - php spark make:migration <NomDuFichier>
 - php spark migrate
 - $this->forge->....
-- auto_increment => true
+- auto_increment => true            
 - null => false
 - $this->db->table('caisse')->insertBatch([])
 
@@ -22,3 +22,5 @@ VALUES(CURRENT_TIMESTAMP);
 - session()->setFlashdata('....')
 - base_url()
 - pagination    
+
+## Pdf

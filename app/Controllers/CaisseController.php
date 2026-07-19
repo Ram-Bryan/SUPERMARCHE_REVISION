@@ -29,7 +29,10 @@ class CaisseController extends BaseController
             return redirect()->to('caisse/choix');
         }
 
-        session()->set('caisse', $caisse);
+        session()->set( [
+            'id_caisse' => $caisse['id_caisse'],
+            'caisse_libelle' => $caisse['libelle'],
+        ]);
 
         return view('caisse/achat');
     }

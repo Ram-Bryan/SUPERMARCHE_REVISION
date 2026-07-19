@@ -12,18 +12,14 @@
         <p><?= session()->getFlashdata('error') ?></p>
     <?php } ?>
 
-    <form action="/caisse/valider" method="get">
+    <form action="<?= base_url("caisse/valider") ?>" method="get">
         <select name="caisse" id="caisse">
             <?php foreach ($caisses as $caisse) { ?>
                 <option value="<?= $caisse['id_caisse'] ?>"> <?= $caisse['libelle'] ?></option>
             <?php } ?>
         </select>
-
         <input type="submit" value="Choisir la caisse">
-
     </form>
-
-
     
 </body>
 </html>
