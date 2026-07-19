@@ -8,9 +8,17 @@
 <body>
     <h1>Choisissez la caisse</h1>
 
-    <?php if (session()->getFlashdata('error')) {?>
-        <p><?= session()->getFlashdata('error') ?></p>
-    <?php } ?>
+    <?php if (session()->has('error')) { ?>
+        <div class="alert alert-danger">
+            <?= session('error')?>
+        </div>
+    <?php } ?>  
+
+    <?php if (session()->has('success')) { ?>
+        <div class="success success-danger">
+            <?= session('success')?>
+        </div>
+    <?php } ?>  
 
     <form action="<?= base_url("caisse/valider") ?>" method="get">
         <select name="caisse" id="caisse">

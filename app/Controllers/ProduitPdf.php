@@ -11,7 +11,8 @@ require_once APPPATH . 'ThirdParty/fpdf186/fpdf.php';
 class ProduitPdf extends BaseController
 {
     public function generate() {
-
+        
+        // prendre les trucs
         $model = new ProduitModel();
         $produits = $model->findAll();
 
@@ -19,7 +20,15 @@ class ProduitPdf extends BaseController
         $pdf->AddPage();
         $pdf->SetFont('Arial', 'B', 14);
 
-        // Header
+        // ajouter une ligne
+        $pdf->Cell(70, 10, "Caissier: " . session()->get("email"));
+        $pdf->Ln();
+
+        // ajouter une ligne
+        $pdf->Cell(70, 10, "Caisse: " . session()->get("caisse_libelle"));
+        $pdf->Ln();
+
+        // Header de la table
         $pdf->Cell(70, 10, 'Nom Produit', 1);
         $pdf->Cell(70, 10, 'Prix Produit', 1);
         $pdf->Cell(70, 10, 'Quantite en stock', 1);

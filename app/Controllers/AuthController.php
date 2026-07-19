@@ -32,19 +32,15 @@ class AuthController extends BaseController
                     'email'=>$caissier['email'],
                     'isLoggedIn'=>true,
                 ]);
-                
-                session()->setFlashdata('success', 'Credentials verified successfully');
-
-                return redirect()->to("/caisse/choix");
+            
+                return redirect()->to("/caisse/choix")->with("success", "'Credentials verified successfully'");
 
             } else {
-                session()->setFlashdata('error', 'Email ou Mot de passe incorrect');
-                return redirect()->to("/");
+                return redirect()->to("/")->with('error', 'Email ou Mot de passe incorrect');
             }
 
         } else {
-            session()->setFlashdata('error', 'Email ou Mot de passe incorrect');
-            return redirect()->to("/");
+            return redirect()->to("/")->with('error', 'Email ou Mot de passe incorrect');
         }
 
     }

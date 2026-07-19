@@ -147,3 +147,31 @@ class TicketPDF extends FPDF
 
 ```
 
+
+
+Avoir plusieurs et plsuier acaht detail:
+
+```php
+
+$currentAchat = null;
+
+foreach ($rows as $row)
+{
+
+    if ($currentAchat != $row['id_achat'])
+    {
+
+        // New purchase
+
+        printPurchaseHeader($row);
+
+        $currentAchat = $row['id_achat'];
+
+    }
+
+    printPurchaseLine($row);
+
+}
+
+```
+

@@ -10,11 +10,11 @@
 
 <body>
 
-    <?php if (session()->getFlashdata('error')) { ?>
+    <?php if (session()->has('error')) { ?>
         <div class="alert alert-danger">
-            <?= session()->getFlashdata('error') ?>
+            <?= session('error')?>
         </div>
-    <?php } ?>
+    <?php } ?>  
 
     <form id="login" method="post" action="<?= base_url("login") ?>">
         <?= csrf_field() ?>

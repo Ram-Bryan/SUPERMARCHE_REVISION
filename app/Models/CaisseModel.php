@@ -20,8 +20,13 @@ class CaisseModel extends Model
 
     protected $useTimestamps = false;
 
-    public function getCaisseByLibelle($libelle){
+    public function getCaisseByLibelle($libelle)
+    {
         return $this->where('libelle', $libelle)->first();
     }
 
+    public function findByNumero($numero)
+    {
+        return $this->where('numero', $numero)->first();
+    }
 }

@@ -18,4 +18,9 @@ class ClientModel extends Model
     protected $useAutoIncrement = true;
 
     protected $useTimestamps = false;
+
+    public function findByNom($nom)
+    {
+        return $this->where('nom', $nom)->first();
+    }
 }

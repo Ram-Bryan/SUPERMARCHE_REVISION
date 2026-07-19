@@ -22,4 +22,10 @@ class AchatModel extends Model
     protected $useAutoIncrement = true;
 
     protected $useTimestamps = false;
+
+    public function getDetailOfAllAchat()
+    {
+        $query = $this->query("SELECT * FROM v_export_achat");
+        return $query->getResultArray();
+    }
 }

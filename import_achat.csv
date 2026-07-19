@@ -1,0 +1,11 @@
+Achat,Client,Caisse,Caissier,Date,Statut,Produit,Quantité,Prix unitaire
+1,Jean Dupont,1,caissier@gmail.com,2026-07-01 10:30:00,cloture,Biscuit,2,1000
+1,Jean Dupont,1,caissier@gmail.com,2026-07-01 10:30:00,cloture,Lait,1,1200
+1,Jean Dupont,1,caissier@gmail.com,2026-07-01 10:30:00,cloture,Savon,3,800
+2,Marie Martin,2,caissier@gmail.com,2026-07-02 14:15:00,cloture,Pain,5,400
+2,Marie Martin,2,caissier@gmail.com,2026-07-02 14:15:00,cloture,Riz (1kg),2,2500
+3,Pierre Bernard,1,caissier@gmail.com,2026-07-03 09:00:00,en_cours,Lait,2,1200
+3,Pierre Bernard,1,caissier@gmail.com,2026-07-03 09:00:00,en_cours,Biscuit,1,1000
+3,Pierre Bernard,1,caissier@gmail.com,2026-07-03 09:00:00,en_cours,Pain,4,400
+4,Jean Dupont,2,caissier@gmail.com,2026-07-04 16:20:00,cloture,Savon,2,800
+4,Jean Dupont,2,caissier@gmail.com,2026-07-04 16:20:00,cloture,Riz (1kg),1,2500

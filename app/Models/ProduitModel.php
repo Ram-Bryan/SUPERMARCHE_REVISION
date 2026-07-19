@@ -20,4 +20,9 @@ class ProduitModel extends Model
     protected $useAutoIncrement = true;
 
     protected $useTimestamps = false;
+
+    public function findByDesignation($designation)
+    {
+        return $this->where('designation', $designation)->first();
+    }
 }
